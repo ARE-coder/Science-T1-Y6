@@ -1,0 +1,106 @@
+<html> 
+    <head>
+        <title> 
+            Nervous System
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <img id="BACK" src="back-arrow-icon-vector-27950630.jpg" onclick="RETURN()">
+        <h1 id="H1" class="GO"> Nervous System </h1>
+        <p> 
+            The Nervous System is a a system which involve the <b> brain </b> the boss of all it control anything and our 7 life process will be under the brain control
+            <br>
+            <b>M</b>ovement ( Changing place or position )
+            <br>
+            <b>S</b>ensation ( be aware of the Surrounding )
+            <br>
+            <b> R </b> espiration ( Generate Energy <a href="RS.html"> View in Respiratory System </a> )
+            <br>
+            <br>
+            <b>G</b>rowth ( to increase in size and Number )
+            <br>
+            <b>R</b>eproduction ( To produce new induviduals )
+            <br>
+            <b>E</b>xcretion ( To Remove Waste Product wiew in <a href="ES.html"> View in Excretion System </a>)
+            <br>
+            <b>N</b>utrition ( To Obtain foods or Drinks )
+            <br>
+            Also it can control alot of things look at the picture below, and check this <a href="https://www.ducksters.com/science/nervous_system.php"> Website .</a>
+            <br>
+            <br>
+            <center>
+            <img src="WhatsApp Image 2021-09-24 at 8.22.22 PM.jpeg" class="COOL" id="Brain" style="display: none;"> 
+            </center>
+            The nerves send signal known as neurons from all over the body and the goes to the spinal cord if there is no direct connection to the brain.
+            <br>
+            <br>
+            <center>
+            <img src="Nervous-System.jpg" class="COOL">
+            <br>
+            <iframe width="900" height="506" src="https://www.youtube.com/embed/ndDpjT0_IM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+            <center>
+            <button id="O" onclick="Know()">  
+              Dictionary
+            </button>
+            <br>
+            <br>
+            <div id="DISPLAY"> 
+
+            </div>
+            </center>
+            
+            
+        </p>
+    </body>
+    <style>
+         .GO{
+             text-align:center ;
+         }
+         body{
+             color: rgb(12, 82, 82);
+             background-color: paleturquoise;
+         }
+         #Brain{
+             height:300px;
+             width:300px;
+         }
+         .COOL{
+             height:300px;
+             width:300px;
+         }
+         #BACK{
+             border-width: 3px;
+             border-radius: 50%;
+             border-color: grey;
+             border-style: ridge;
+             height:30px;
+             width:30px;
+         }
+    </style>
+    <script>
+        setInterval(Appear(), 26640);
+        function Appear()
+        {
+            document.getElementById("Brain").style.display = "block";
+        }
+        function RETURN()
+        {
+           var a = window.confirm(" Are you Sure you want to go back?");
+          if ( a == true )
+          {
+              window.location = "index.html";
+          }else{
+              window.alert("You refused to go back\nThank You.");
+          }
+        }
+        function Know()
+        {
+            document.getElementById("DISPLAY").innerHTML = "<b> Brain: </b> is the main oragan which control everything. <br> <b> Spinal: </b> is a nerve where all the indirect nerves goes here and transfer to brain <br> <b> Nerves: </b> is a vein where they send signal."
+        }
+    </script>
+</html>

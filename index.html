@@ -1,0 +1,184 @@
+<html> 
+<head> 
+    <title> Human Functions </title>
+    
+    <ol id="LIST"> 
+        <li> <a href="RS"> Respiratory System </a></li>
+        <li> <a href="BCS"> Blood Circulatory System </a></li>
+        <li> <a href="DS"> Digestive System </a></li>
+        <li> <a href="ES"> Excretory System </a></li>
+        <li> <a href="NS"> Nervous System </a></li>
+
+    </ol>
+    <br>
+    <br>
+    <h1 class="H1"> <b><i><u> Human Functions.</u></i></b></h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body onload="Intro()"> 
+    
+    <center> 
+
+<p id="p1"> 
+    In this website we will talk about the human functions which are the <b>The Respiratory System </b>,  
+    <b> The Excretory System </b>, <b> The Blood Circulatory System </b>,<b>  The Digestive System </b>,<b> The Nervous System </b>.
+    <br>
+    Here is a brief Summary for each system: 
+        
+</p>
+<section id="RS"> 
+    <h1 class="H1"> Respiratory System </h1>
+    <p> 
+        The respirtory is the the system for breathing, and it give us energy. We take in O₂ (Oxygen) and give out CO₂
+         (Carbon Dioxide) and you can learn more by clicking the button below 
+         <br>
+         <br>
+         <button id="Breathe" class="btn btn-info System" onclick="RS()"> Respiratory System </button>
+    </p>
+
+
+</section>
+<section id="BCS">
+    <h1 class="H1"> Blood Circulatory System </h1>
+    <p>
+        The Blood Circulatory System is a System for Heart and blood distrubution. What ever carbon dioxide come 
+        in the heart it goes to the lungs so we can breath it out. and the oxygen come from the lungs when we breathe in, it 
+        comes from the lung to the heart and the heart distrubute it to the rest of the body. to learn more click on the button below.
+        <br>
+        <br>
+        <button id="Heart" class="btn btn-info System" onclick="BCS()"> Blood Circulatory System </button> 
+    </p>
+
+</section> 
+<section id="DS"> 
+    <h1 class="H1"> Digestive System </h1>
+    <p>
+        The digestive system converts the foods we eat into their simplest forms, like glucose (sugars), amino acids 
+        (that make up protein) or fatty acids (that make up fats). The broken-down food is then absorbed into the bloodstream from 
+        the small intestine and the nutrients are carried to each cell in the body. Click on the button to Learn More
+        <br>
+        <br>
+        <button id="tummy" class="btn btn-info System" onclick="DS()"> Digestive System </button>
+    </p>
+</section>
+<section id="ES">
+    <h1 class="H1"> Excretory System </h1> 
+    <p> 
+        The Ecretory System is a system where you remove the waste form your body as a form of Urine, click below to learn more 
+        <br>
+        <br>
+        <button id="Kidney" class="btn btn-info System" onclick="ES()"> Excretory System </button>
+    </p>
+
+</section>
+<section id="NS">
+    <h1 class="H1"> Nervous System </h1> 
+    <p> 
+        Nervous System Send Signals to the brain. To learn More click on the button below
+        <br>
+        <br>
+        <button id="Brain" class="btn btn-info System" onclick="NS()"> Nervous System </button>
+    </p>
+
+</section>
+
+
+
+
+</center>
+</body>
+<style>
+    .H1{
+        text-align: center;
+    }
+    body{
+        background-color: Red ;
+        background-size: cover;
+        background-position:center;
+        color:teal;
+        font-size: 18px;
+    }
+    .System{
+        font-size:18px;
+        font-family: cursive;
+        width: 30%;
+    }
+    #LIST{
+        
+     list-style: none;
+     font-family: cursive;
+	 float:right;
+	 top:10px;
+	 right:30px;
+	 cursor:pointer;
+	 color:black;
+    }
+    li{
+        display:inline;
+	 margin-left: 10px;
+    }
+
+</style>
+<script> 
+function Intro()
+{
+  alert("Welcome to Human Functions\n Where we learn the human function.");
+}
+function RS()
+{
+     var r = window.confirm("Are you sure you want to go the Repirtory System Page?")
+    if( r == true )
+    {
+        window.location = "RS.html";
+    }else{
+        window.alert("You refused to enter the page\n Thank You");
+    }
+}
+
+    function BCS()
+{
+     var r = window.confirm("Are you sure you want to go the Blood Circulatory System Page?")
+    if( r == true )
+    {
+        window.location = "BDS.html";
+    }else{
+        window.alert("You refused to enter the page\n Thank You");
+    }
+}
+function DS()
+{
+     var r = window.confirm("Are you sure you want to go the Digestive System Page?")
+    if( r == true )
+    {
+        window.location = "DS.html";
+    }else{
+        window.alert("You refused to enter the page\n Thank You");
+    }
+}
+function ES()
+{
+    var r = window.confirm("Are you sure you want to go the Excretory System Page?")
+    if( r == true )
+    {
+        window.location = "ES.html";
+    }else{
+        window.alert("You refused to enter the page\n Thank You");
+    }
+}
+function NS()
+{
+    var r = window.confirm("Are you sure you want to go the Nervous System Page?")
+    if( r == true )
+    {
+        window.location = "NS.html";
+    }else{
+        window.alert("You refused to enter the page\n Thank You");
+    }
+}
+
+</script>
+
+</html>

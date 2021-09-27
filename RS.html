@@ -1,0 +1,70 @@
+<html>
+    <head> 
+        <title> Respiratory System </title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body> 
+       <img id="return" class="back" onclick="BACK()" src="back-arrow-icon-vector-27950630.jpg"> 
+        <center> 
+            <h1 style="text-align: center;"> Respiratory System </h1>
+            <p> 
+            Respiratory System is a system which you inhale in the O₂ ( Oxygen) through our nose and goes the the <b> Trachea </b>
+             also known as the windpipe. then goes into the lungs and oxygenate the blood and takes the carbon dixoide, and you exhale.
+             <br> And it give us energy while we breath to know more. you can check the <b> Blood circulatory System Now </b>.
+            </p> 
+            <button id="Heart" onclick="BDS()" class="btn btn-info"> Blood Circulatory System </button>
+            <p> 
+                <b> Note:</b> You can know how does air run in the body just click in the button below
+                <button id="Download" style="width: 30%;" class="btn btn-link"> <a href="g6_science_tm_02-3-8.pdf" download="Repirtory System"> Download PDF </a></button>
+            </p>
+
+        </center>
+        <iframe width="1536" height="864" src="https://www.youtube.com/embed/mOKmjYwfDGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </body>
+    <style>
+     #Heart{
+         width: 30%;
+         font-size: 18px;
+         font-family:cursive;
+
+     }
+     body{
+         background-color: turquoise;
+     }
+     .back
+     {
+             border-width: 3px;
+             border-radius: 50%;
+             border-color: grey;
+             border-style: ridge;
+             height:30px;
+             width:30px;
+     }
+    </style>
+    <script> 
+     function BDS()
+     {
+         
+        var x = window.confirm("Are you sure you want to go to Blood Circulatory System?");
+         if( x == true)
+         {
+            window.location = "BDS.html";
+         }else{
+             window.alert("you declined to go to Blood Circulatory System.");
+         }
+     }
+     function BACK()
+     {
+        var x = window.confirm("Are you sure you want to go back");
+         if( x == true)
+         {
+            window.location = "index.html";
+         }else{
+             window.alert("you declined to go back.");
+         } 
+     }
+    </script>
+</html>

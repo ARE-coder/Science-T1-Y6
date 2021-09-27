@@ -1,0 +1,65 @@
+<html> 
+    <head> 
+        <title> 
+            Login 
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <center>
+        <h1>
+            Login
+        </h1>
+        <input type="text" id="User" class="in" placeholder="Username"> 
+        <br>
+        <br>
+        <br>
+        <input type="password" id="Pass" class="in" placeholder="Password">
+        <br>
+        <br>
+        <button id="Submit" onclick="check()"> Submit </button>
+        <br>
+        <br>
+        <input type="checkbox" id="see" onclick="Show()"> Show Password
+        
+        </center>
+    </body>
+    <style>
+        body{
+            background-color:Red;
+            color:rgb(58, 129, 129);
+        }
+    </style>
+    <script>  
+    function check()
+    {
+     var a = "Science";
+     var b = "Password123"
+     localStorage.setItem("Username", a );
+     localStorage.setItem("Password", b );
+     var d = document.getElementById("User").value;
+     var f = document.getElementById("Pass").value;
+     var c = localStorage.getItem("Username", a );
+    var e = localStorage.getItem("Password", b );
+
+     if( d == c && e == f )
+     {
+        window.location = "index.html";
+     }else{
+        window.alert("Worng password or Username.");
+     }
+    }
+    function Show()
+    {
+        var x = document.getElementById("Pass");
+        if (x.type === "password") {
+      x.type = "text";
+      } else {
+      x.type = "password";
+  }
+    }
+    </script>
+</html>

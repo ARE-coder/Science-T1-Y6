@@ -1,0 +1,124 @@
+<html> 
+    <head> 
+        <title> 
+            Blood Circulatory System 
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body> 
+        <img id="back" src="back-arrow-icon-vector-27950630.jpg" onclick="back()">
+        <h1> 
+            Blood Circulatory System
+        </h1>
+        <p> 
+                  The circulatory system is made up of blood vessels that carry blood away from and towards the heart. Arteries carry blood 
+            away from the heart and veins carry blood back to the heart. The circulatory system carries oxygen, nutrients, and hormones
+            to cells, and removes waste products, like carbon dioxide.
+            <br>
+            <br>
+                  when we inhale oxygen, the oxygen goes to the lungs and take the carbon and breathe out. But 
+                  <br>
+                  from where did we get the CO₂? 
+                  <br> 
+                  Here is a photo the right ventricle comes the CO₂ from the rest of the body and goes 
+                  to the right atrium which goes to the lungs and goes to the blue aorta 
+                  thats how we get the carbon doixide and breathe out carbon dioxide.
+                  <br>
+                  <br>
+                  But what about the oxygen we inhale where did that go?
+                  <br>
+                  it just the complete Opposites. From the left atrium comes the Oxygen from the lungs exchanged while we breathed in,
+                  goes to the left ventricle and then exit to the red Aorta
+
+                  <br>
+                  <br>
+                  <center>
+                  <img id="PIC1" src="Blood Circulatory system.jpg" class="PIC">
+                  <img id="PIC2" src="Part of the heart.jpg" onmouseover="change()" onmouseout="change2()">
+                  <br>
+                  <br>
+           also take a look at the PDF over here:
+           <button id="install" class="btn btn-link">  <a href="g6_science_tm_02-9-36.pdf" download="Blood Circulatory System"> Download the PDF </a></button>
+            <br>
+            <iframe width="900" height="506" src="https://www.youtube.com/embed/2HTZs51OYwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <br>
+               <br>
+               <iframe width="900" height="506" src="https://www.youtube.com/embed/tg_ObDJEaGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+             <br>
+           <button id="KNOW" onclick="Known()"> 
+            Dictionary
+           </button>
+           <br>
+           <br>
+           <div id="define">
+
+           </div>
+           <div id="define2">
+
+        </div>
+         </center>
+
+
+        
+        </p>
+    </body>
+   <style>
+       h1{
+           text-align:center;
+       }
+       body{
+           color:green;
+           background-color: yellow;
+       }
+       .PIC{
+           height:400px;
+           width: 400px;
+           display:none;
+       }
+       #PIC2{
+        height:400px;
+        width: 400px;   
+       }
+       #define{
+           font-size: 20px;
+           
+       }
+       #back{
+        border-width: 3px;
+             border-radius: 50%;
+             border-color: grey;
+             border-style: ridge;
+             height:30px;
+             width:30px;
+       }
+
+   </style>
+   <script>
+       setInterval(myfunction, 60000); 
+
+       function myfunction()
+       {
+          document.getElementById("PIC1").style.display = "block";
+          document.getElementById("PIC2").style.display = "none";
+       }
+       function Known()
+       {
+          document.getElementById("define").innerHTML = "Left atrium, Right atrium, Left ventricle, Right ventricle: Part of the Heart." 
+       }
+       function change()
+       {
+           document.getElementById("PIC2").src = "HEART.jpeg";
+       }
+       function change2()
+       {
+           document.getElementById("PIC2").src="Part of the Heart.jpg";
+       }
+       function back()
+       {
+           window.location = "index.html";
+       }
+   </script>
+</html>

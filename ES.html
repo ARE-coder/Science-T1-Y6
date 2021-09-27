@@ -1,0 +1,69 @@
+<html> 
+    <head>
+        <title>
+            Excretory System 
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <img id="back" src="back-arrow-icon-vector-27950630.jpg" onclick="back()">
+            <center> 
+            <h1> Excretory System </h1> 
+           </center>
+      <p> 
+          The Ecretory System is a system where you remove the waste form your body as a form of Urine.
+          <br>
+          <br>
+          First while the blood is going through the kidney the kidney will filter the bloodand takes in the waste.
+          Then it will be transfered through the veins know as Ureter and goes ot the bladder and stays their till 
+           you have a urge to pass urine
+           <center> 
+               <img src="Excretory-System.jpg" id="PEE"> 
+               <br>
+               <br>
+               <button id="GO" class="btn btn-link"> <a href="Science-The-Excretory-System.pdf" download="Excretory System"> Download the PDF</a> </button>
+               <br>
+               <iframe width="853" height="480" src="https://www.youtube.com/embed/dZREDWD_5bA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <br>
+               <button id="define" onclick="define()"> Dictionary </button>
+               <br>
+               <br>
+               <p id="DEFINE"> 
+
+               </p>
+           </center>
+      </p>
+
+        
+    </body>
+    
+    <script> 
+    function back()
+    {
+        window.location = "index.html"
+    }
+    function define()
+    {
+        document.getElementById("DEFINE").innerHTML = "<h4> Kidney: </h4> is a Major Organ in the System which helps filter the blood from, salt, Excess water and waste products ad send them to the Bladder. <br><br> <h4> Bladder: </h4> is a mucular bag which hold the Urine and releases when we want to go to the toilet."
+
+    }
+    </script>
+    <style>
+        
+            #back{
+                border-width: 3px;
+             border-radius: 50%;
+             border-color: grey;
+             border-style: ridge;
+             height:30px;
+             width:30px;
+       }
+        body{
+            background-color: blue;
+            color:cyan;
+        }
+    </style>
+</html>
